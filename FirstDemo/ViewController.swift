@@ -78,5 +78,11 @@ class ViewController: UIViewController {
                 return "\(String(firstCharacter).uppercased())\(word)"
         }.joined(separator: " ")
     }
+    
+    func sortWord(string: String) -> [String]{
+        let words = string.components(separatedBy: "")	
+        
+        return words
+    }
 }
 

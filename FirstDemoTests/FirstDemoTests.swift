@@ -82,6 +82,15 @@ class FirstDemoTests: XCTestCase {
         let result = viewController.makeHeadlineShort(string: inputString)
         
         XCTAssertEqual(expectedHeadline, result)
-    }
+    }   		
     
+    func testSortWord_ShouldReturnSortedWord(){
+        let inputString = "dmulea"
+        let expectedWord = ["adelmu"]
+        
+        let result = viewController.sortWord(string: inputString)
+        
+        XCTAssertEqual(expectedWord, result)
+        
+    }
 }
