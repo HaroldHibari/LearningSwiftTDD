@@ -79,10 +79,9 @@ class ViewController: UIViewController {
         }.joined(separator: " ")
     }
     
-    func sortWord(string: String) -> [String]{
-        let words = string.components(separatedBy: "")	
-        
-        return words
+    func sortWord(string: [String]) -> [String]{
+        //return the given string array alphabetically sorted
+        return string.sorted{$0<$1}
     }
 }
 

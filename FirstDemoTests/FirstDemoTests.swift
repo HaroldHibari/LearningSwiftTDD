@@ -84,13 +84,16 @@ class FirstDemoTests: XCTestCase {
         XCTAssertEqual(expectedHeadline, result)
     }   		
     
-    func testSortWord_ShouldReturnSortedWord(){
-        let inputString = "dmulea"
-        let expectedWord = ["adelmu"]
+    /**
+     This test verifies that the sort array function sorts the aray alphabetically
+     */
+    func testSortArray_ShouldReturnSortedWord(){
+        let inputArray = ["c","d","a","e","b"]
+        let expectedArray = ["a","b","c","d","e"]
         
-        let result = viewController.sortWord(string: inputString)
+        let result = viewController.sortWord(string: inputArray)
         
-        XCTAssertEqual(expectedWord, result)
+        XCTAssertEqual(expectedArray, result)
         
     }
 }
